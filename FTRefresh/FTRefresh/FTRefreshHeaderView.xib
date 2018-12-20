@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FTRefreshHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="102"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FTRefresh.bundle/img_refrech_star.png" translatesAutoresizingMaskIntoConstraints="NO" id="Gn1-Dv-61u">
+                    <rect key="frame" x="70" y="7" width="253" height="75"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="75" id="Acm-SK-Cmf"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FTRefresh.bundle/img_refrsh_ribbon.png" translatesAutoresizingMaskIntoConstraints="NO" id="C3c-YB-pTS">
+                    <rect key="frame" x="149" y="62" width="95" height="33"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="33" id="LEx-Pu-c31"/>
+                        <constraint firstAttribute="width" constant="95" id="tGW-CQ-m7a"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FTRefresh.bundle/img_refrsh_cat.png" translatesAutoresizingMaskIntoConstraints="NO" id="ONr-dk-4gY">
+                    <rect key="frame" x="172" y="67" width="49" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="tQO-A0-pWZ"/>
+                        <constraint firstAttribute="width" constant="49" id="yab-GH-ixU"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FTRefresh.bundle/img_refrsh_box.png" translatesAutoresizingMaskIntoConstraints="NO" id="NoA-MG-Yaa">
+                    <rect key="frame" x="164" y="81" width="65" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="KaK-71-CZJ"/>
+                        <constraint firstAttribute="width" constant="65" id="sTG-DY-onT"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="下拉更新..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="okn-mJ-jPC">
+                    <rect key="frame" x="166.5" y="32" width="60" height="15"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="deviceRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="C3c-YB-pTS" secondAttribute="bottom" constant="7" id="1D4-CC-1uQ"/>
+                <constraint firstItem="C3c-YB-pTS" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="3Kw-VB-Qny"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="ONr-dk-4gY" secondAttribute="bottom" id="H3v-I4-7hh"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Gn1-Dv-61u" secondAttribute="trailing" constant="70" id="Kzf-le-kvK"/>
+                <constraint firstItem="C3c-YB-pTS" firstAttribute="top" secondItem="okn-mJ-jPC" secondAttribute="bottom" constant="15" id="aa4-MG-8bv"/>
+                <constraint firstItem="NoA-MG-Yaa" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="byB-Rr-7kP"/>
+                <constraint firstAttribute="bottom" secondItem="Gn1-Dv-61u" secondAttribute="bottom" constant="20" id="chM-fc-UNg"/>
+                <constraint firstItem="okn-mJ-jPC" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="gMf-MF-5dX"/>
+                <constraint firstItem="ONr-dk-4gY" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="n8L-pE-Bxh"/>
+                <constraint firstItem="Gn1-Dv-61u" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="70" id="rFF-FI-6Qa"/>
+                <constraint firstItem="NoA-MG-Yaa" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="rOp-s3-DO3"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="icon" destination="ONr-dk-4gY" id="XIO-if-JX2"/>
+                <outlet property="iconBottom" destination="H3v-I4-7hh" id="SgP-LH-Ccg"/>
+                <outlet property="prompt" destination="okn-mJ-jPC" id="ajZ-kF-NOE"/>
+            </connections>
+            <point key="canvasLocation" x="164.0625" y="291.54929577464787"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="FTRefresh.bundle/img_refrech_star.png" width="16" height="16"/>
+        <image name="FTRefresh.bundle/img_refrsh_box.png" width="16" height="16"/>
+        <image name="FTRefresh.bundle/img_refrsh_cat.png" width="16" height="16"/>
+        <image name="FTRefresh.bundle/img_refrsh_ribbon.png" width="16" height="16"/>
+    </resources>
+</document>
